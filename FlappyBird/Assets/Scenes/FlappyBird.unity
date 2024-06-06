@@ -120,6 +120,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &769391975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1655079022328144433, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_Name
+      value: Pipes (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 433d4dde592914340acc15ef5d468305, type: 3}
 --- !u!1 &1284376987
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +421,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!58 &1428611126
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -415,30 +472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpForce: {x: 0, y: 7}
   rb2D: {fileID: 1428611125}
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.0041656494
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.9249878
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1496743097
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7180685791694488092, guid: 433d4dde592914340acc15ef5d468305, type: 3}
       propertyPath: m_LocalPosition.y
@@ -596,3 +629,4 @@ SceneRoots:
   - {fileID: 1428611124}
   - {fileID: 1284376989}
   - {fileID: 4644995119882523778}
+  - {fileID: 769391975}
