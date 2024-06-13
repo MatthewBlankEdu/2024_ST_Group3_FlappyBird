@@ -17,6 +17,8 @@ public class BirdController : MonoBehaviour
     public AudioClip scoreSfX;
     public AudioClip jumpSFX;
 
+    public Animator animator;
+
     public int Points;
 
     public static bool GameOver;
@@ -44,6 +46,8 @@ public class BirdController : MonoBehaviour
                 rb2D.gravityScale = 1;
                 HasStarted = true;
             }
+
+            animator.SetTrigger("FlapWings");
 
             rb2D.velocity = Vector2.zero;
             rb2D.AddForce(JumpForce, ForceMode2D.Impulse);
